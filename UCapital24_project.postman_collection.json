@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "9cb7f9c8-fab0-47ce-a7af-cd374a84ff40",
+		"name": "UCapital24 Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44235766"
+	},
+	"item": [
+		{
+			"name": "create advertisement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"title\",\n    \"content\": \"come and enjoy our products with discounts\",\n    \"media_url\": \"https://www.google.com\",\n    \"media_type\": \"IMAGE\",\n    \"start_date\": \"2025-04-22T15:29:29Z\",\n    \"end_date\": \"2026-05-12T15:29:29Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v1/advertisements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"api",
+						"v1",
+						"advertisements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update advertisemen",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"the updated title\",\n    \"content\": \"come and enjoy our products with discounts\",\n    \"media_url\": \"https://www.google.com\",\n    \"media_type\": \"IMAGE\",\n    \"start_date\": \"2025-04-22T15:29:29Z\",\n    \"end_date\": \"2026-05-12T15:29:29Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v1/advertisements/b33dcf90-687c-4327-af95-d1ac3be7af6d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"api",
+						"v1",
+						"advertisements",
+						"b33dcf90-687c-4327-af95-d1ac3be7af6d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get advertisements",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v1/advertisements",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"api",
+						"v1",
+						"advertisements"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "18",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get advertisement by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v1/advertisements/b33dcf90-687c-4327-af95-d1ac3be7af6d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"api",
+						"v1",
+						"advertisements",
+						"b33dcf90-687c-4327-af95-d1ac3be7af6d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete advertisement by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v1/advertisements/b33dcf90-687c-4327-af95-d1ac3be7af6d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"api",
+						"v1",
+						"advertisements",
+						"b33dcf90-687c-4327-af95-d1ac3be7af6d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

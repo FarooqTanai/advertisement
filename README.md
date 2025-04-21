@@ -33,10 +33,10 @@ Alternatively, update the credentials in your `application.properties` file.
 {
   "title": "Special Offer",
   "content": "Come and visit our site for the offer",
-  "mediaUrl": "http://example.com/image.jpg",
-  "mediaType": "IMAGE",
-  "startDate": "2025-04-21T00:00:00Z",
-  "endDate": "2025-04-30T00:00:00Z"
+  "media_url": "http://example.com/image.jpg",
+  "media_type": "IMAGE",
+  "start_date": "2025-04-21T00:00:00Z",
+  "end_date": "2025-04-30T00:00:00Z"
 }
 
 ---
@@ -66,10 +66,10 @@ Alternatively, update the credentials in your `application.properties` file.
 {
   "title": "Spring Sale",
   "content": "Come and visit our site for the offer",
-  "mediaUrl": "https://example.com/banner.jpg",
-  "mediaType": "IMAGE",
-  "startDate": "2025-04-21T00:00:00Z",
-  "endDate": "2025-04-30T00:00:00Z"
+  "media_url": "https://example.com/banner.jpg",
+  "media_type": "IMAGE",
+  "start_date": "2025-04-21T00:00:00Z",
+  "end_date": "2025-04-30T00:00:00Z"
 }
 
 #### Response
@@ -86,10 +86,10 @@ Alternatively, update the credentials in your `application.properties` file.
 {
   "title": "Spring Sale Updated",
   "content": "Now with 50% off!",
-  "mediaUrl": "https://example.com/new-banner.jpg",
-  "mediaType": "IMAGE",
-  "startDate": "2025-04-21T00:00:00Z",
-  "endDate": "2025-05-01T00:00:00Z"
+  "media_url": "https://example.com/new-banner.jpg",
+  "media_type": "IMAGE",
+  "start_date": "2025-04-21T00:00:00Z",
+  "end_date": "2025-05-01T00:00:00Z"
 }
 
 #### Response
